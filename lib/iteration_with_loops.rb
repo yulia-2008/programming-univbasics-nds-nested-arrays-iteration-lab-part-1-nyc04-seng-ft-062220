@@ -9,7 +9,7 @@ def find_even_values(src)
     ind=0
 while ind<src.length do
   inner_ind=0
-    while inner_ind<src[ind] do
+    while inner_ind<src[ind].length do
     src[ind][inner_ind].even?
     puts inner_ind
     inner_ind+=1
