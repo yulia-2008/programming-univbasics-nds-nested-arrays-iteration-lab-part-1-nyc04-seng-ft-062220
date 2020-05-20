@@ -11,7 +11,7 @@ while ind<src.length do
   inner_ind=0
     while inner_ind<src[ind].length do
     src[ind][inner_ind].even?
-    puts inner_ind
+    puts src[ind][inner_ind]
     inner_ind+=1
     end
     ind+=1
