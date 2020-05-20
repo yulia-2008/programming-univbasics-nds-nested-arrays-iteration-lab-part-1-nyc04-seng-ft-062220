@@ -3,8 +3,10 @@
     [99,50,3,4],
     [23,41]
     ]
-=end  
-def find_even_values(src)
+=end
+
+
+=begin def find_even_values(src)
  
     ind=0
 while ind<src.length do
@@ -17,6 +19,13 @@ while ind<src.length do
     ind+=1
 end 
 end
- 
+=end 
 
-#find_even_values(array_of_arrays)
+def find_even_values(src)
+  src.map do |ind|
+    ind.map do |inner_ind|
+      inner_ind.even?
+      puts inner_ind
+    end
+  end 
+end
