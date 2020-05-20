@@ -7,10 +7,10 @@
 def find_even_values(src)
  
     ind=0
-while ind<array_of_arrays.length do
+while ind<src.length do
   inner_ind=0
-    while inner_ind<array_of_arrays[ind] do
-    array_of_arrays[ind][inner_ind].even?
+    while inner_ind<src[ind] do
+    src[ind][inner_ind].even?
     puts inner_ind
     inner_ind+=1
     end
